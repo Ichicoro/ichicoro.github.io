@@ -17,7 +17,7 @@
 
 
 
-body::before {
+.bgdiv::before {
 	background-color: rgb(20, 20, 20);
 	position: absolute;
     width : 110%;
@@ -31,9 +31,9 @@ body::before {
 	content: "";
 	background-image: url("wp.png");
 
-	filter        : blur(5px);
+	filter        : blur(3px);
     -moz-filter   : blur(5px);
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(3px);
     -o-filter     : blur(5px);
 
     position: absolute;
@@ -46,4 +46,54 @@ body {
 	font-family: Montserrat;
 	z-index: 3;
 	color: #ffffff;
+}
+
+::selection {
+	background-color: gray;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+li.navmenuitem {
+	display: inline;
+	padding-right: 5px;
+	padding-left: 5px;
+	cursor: inherit;
+	list-style-type: none;
+}
+
+div.header {
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	z-index: 99;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	border-bottom: 0px;
+	cursor: default;
+}
+
+a.linku {
+	color: #f2f2f2;
+	text-decoration: none;
+	transition:.30s;
+	cursor: hand;
+}
+
+a.linku:hover {
+	color: #595959;
+	cursor: hand;
+}
+
+span.pagetitle {
+	float: left;
+	text-transform: uppercase;
+}
+
+span.navmenu {
+	float: right;
+	font-weight: bold;
 }
