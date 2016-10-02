@@ -34,16 +34,10 @@
 
 </body>
 <script>
- 		var age = document.getElementById("ownAge").innerHTML;
- 		var now = new Date();
- 		var birthday = new Date(now.getFullYear(), 10, 20);
- 		var bornyear = 1999;
- 		var agen = now.getFullYear() - bornyear;
- 		if(now < birthday)
- 		{
-		 	agen--;
-		}
- 		document.getElementById("ownAge").innerHTML = agen;
- 		console.log(agen);
- 	</script>
+	var today = new Date();
+	var birthday = new Date(1999, 10, 20);
+	var age = (today - birthday)/1000/60/60/24/365.25;
+	document.getElementById("ownAge").innerHTML = Math.floor(age);
+	console.log(age);
+</script>
 </html>
