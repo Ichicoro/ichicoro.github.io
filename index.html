@@ -15,7 +15,7 @@
 <div class="header">
 <span id="navmenu">
 	<ul class="navbar">
-	<li class="navmenuitem title_li" id="pagetitle"><a href="#top" class="linku">ichicoro</a></li>
+	<li class="navmenuitem title_li" id="pagetitle"><a href="#top" class="linku">ichicoro</a> (now <span id="ownAge">16</span>)</li>
 	<li class="navmenuitem navbar_divider">/</li>
 	<li class="navmenuitem"><a class="linku" href="#">about</a></li>
 	<li class="navmenuitem"><a class="linku" href="#">projects</a></li>
@@ -29,4 +29,17 @@
 
 
 </body>
+<script>
+ 		var age = document.getElementById("ownAge").innerHTML;
+ 		var now = new Date();
+ 		var birthday = new Date(now.getFullYear(), 10, 20);
+ 		var bornyear = 1999;
+ 		var agen = now.getFullYear() - bornyear;
+ 		if(now < birthday)
+ 		{
+		 	agen--;
+		}
+ 		document.getElementById("ownAge").innerHTML = agen;
+ 		console.log(agen);
+ 	</script>
 </html>

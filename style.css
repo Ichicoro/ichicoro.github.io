@@ -1,4 +1,4 @@
-.bgdiv::before {
+/* .bgdiv::before {
 	background-color: rgb(20, 20, 20);
 	position: absolute;
     overflow: hidden;
@@ -21,12 +21,13 @@
     position: absolute;
     
     z-index: -1;
-}
+} */
 
 body {
 	font-family: Montserrat;
 	z-index: 3;
 	color: #ffffff;
+    margin: 0px;
 }
 
 ::selection {
@@ -87,6 +88,9 @@ span.navmenu {
 }
 
 .bgdiv {
+    background-image: url("assets/bg1.png");
+    position: absolute;
+    overflow: hidden;
     height: 100vh;
     width: 100vw;
 }
