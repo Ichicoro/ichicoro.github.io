@@ -100,16 +100,16 @@ span.navmenu {
     background-attachment: fixed;
 }
 
-#firstbig {
+#top {
     background-image: url("assets/bg1.png");
 }
 
-#aboutsection {
+#about {
     background-color: #FFFFFF;
     background-image: url("assets/forest.jpg");
 }
 
-#projectssection {
+#projects {
     background-color: #FFFFFF;
     background-image: url("assets/bg1.png");
     background-position: right top;
