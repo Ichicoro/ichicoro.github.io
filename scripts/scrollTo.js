@@ -1,9 +1,7 @@
 $(document).on('scroll', function() {
    	if($(this).scrollTop()>=$('#about').position().top){
-   		console.log("Past #above!");
-       	document.getElementById("header").style.backgroundColor = "rgba(0,0,0,0.1)";
+       	document.getElementById("header").className = "semi";
    	} else {
-   		console.log("Above... #above!");
-       	document.getElementById("header").style.backgroundColor = "rgba(0,0,0,0)";
+       	document.getElementById("header").className = "transparent";
    	}
 })
