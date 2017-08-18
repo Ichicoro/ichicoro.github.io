@@ -45,10 +45,12 @@
 
 </body>
 <script>
-	var today = new Date();
-	var birthday = new Date(1999, 10, 20);
-	var age = (today - birthday)/1000/60/60/24/365.25;
-	document.getElementById("ownAge").innerHTML = Math.floor(age);
-	console.log(age);
+	var getAge = (bday = new Date(), date = new Date()) => {
+		//var today = new Date();
+		//var birthday = new Date(1999, 10, 20);
+		return (date - bday)/1000/60/60/24/365.25;
+	}
+	document.getElementById("ownAge").innerHTML = Math.floor(getAge(new Date(1999, 10, 20)));
+	console.log(getAge(new Date(1999, 10, 20)));
 </script>
 </html>
