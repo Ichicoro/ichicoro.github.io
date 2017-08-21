@@ -1,56 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link href="style.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-	<script src="scripts/jquery.js" defer></script>
-	<script src="scripts/smoothscroll.js" defer></script>
-	<script src="scripts/scrollTo.js" type="text/javascript" defer></script>
-	
-	<title>ichicoro</title>
-</head>
-<body>
+	<head>
+    	<meta name="theme-color" content="#EEEEEE">
+		<meta charset="utf-8">
+    	<script src="nightmode.js"></script>
+    	<link rel="stylesheet" type="text/css" href="style.css">
+    	<link rel="stylesheet" type="text/css" href="centraltext.css">
+    	<link rel="stylesheet" type="text/css" href="controls.css">
+    	<title>Ichicoro</title>
+	</head>
+<body class="lighttheme">
 
-<header id="header" class="transparent">
-	<span id="navmenu">
-		<ul class="navbar">
-			<li class="navmenuitem title_li" id="pagetitle"><a href="#top" class="linku">ichicoro</a><!-- (now <span id="ownAge">16</span>) --></li>
-			<li class="navmenuitem navbar_divider">/</li>
-			<li class="navmenuitem"><a class="linku" href="#about">about</a></li>
-			<li class="navmenuitem"><a class="linku" href="#projects">projects</a></li>
-			<li class="navmenuitem"><a class="linku" href="#contact">contact</a></li>
-		</ul>
-	</span>
-</header>
+    <div class="bgdiv centered" id="top">
+        <div id="cosotop">
+            <p class="smalltext">hi, my name is</p>
+            <h1 id="nametext">ichicoro</h1>
+            <p class="smalltext">and I'm a <a id="ghlink" href="https://github.com/Ichicoro">developer</a></p>
+        </div>
+    </div>
 
-<div class="bgdiv" id="top">
-	<span class="">
-		<img src="assets/icons/github-dark.png" />
-	</span>
-</div>
-
-<div class="bgdiv" id="about">
-
-</div>
-
-<div class="bgdiv" id="projects">
-
-</div>
-
-<div class="bgdiv" id="contact">
-
-</div>
-
-
+    <div id="controls">
+        <p id="themetoggle" onclick="toggleTheme()">toggle theme</p>
+    </div>
 
 </body>
-<script>
-	var getAge = (bday = new Date(), date = new Date()) => {
-		//var today = new Date();
-		//var birthday = new Date(1999, 10, 20);
-		return (date - bday)/1000/60/60/24/365.25;
-	}
-	document.getElementById("ownAge").innerHTML = Math.floor(getAge(new Date(1999, 10, 20)));
-	console.log(getAge(new Date(1999, 10, 20)));
-</script>
 </html>

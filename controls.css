@@ -1,0 +1,15 @@
+#controls {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    font-weight: 500;
+}
+
+#themetoggle {
+	position: fixed;
+	top: 0px;
+	left: 15px;
+	font-weight: 600;
+	letter-spacing: 2px;
+    cursor: pointer;
+}

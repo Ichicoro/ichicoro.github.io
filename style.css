@@ -1,38 +1,60 @@
 body {
-    font-family: Montserrat;
+    font-family: "Source Code Pro";
+    font-weight: 500;
     z-index: 3;
-    color: #000000;
-    margin: 0px;q
+    margin: 0px;
     text-align: center;
-}
-
-header {
-    /* position: fixed;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    z-index: 99;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    border-bottom: 0px; */
+    display: block;
     cursor: default;
+}
+
+.lighttheme {
+    color: #333333;
+    background-color: #EEEEEE;
+    transition: all 2s cubic-bezier(0, 1, 0.700, 1);
+}
+
+.darktheme {
+    color: #EEEEEE;
+    background-color: #333333;
+    transition: all 2s cubic-bezier(0, 1, 0.700, 1);
+}
+
+::selection {
+    background-color: gray;
+}
+
+
+.bgdiv {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+.centered {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.lefted {
+    /* width: 75vw; */
     text-align: left;
-    letter-spacing: 2px;
+    padding-left: 12.5vw;
+    width: 75vw;
 }
 
-li.navmenuitem {
-    display: inline;
-    padding-right: 10px;
-    padding-left: 10px;
-    cursor: inherit;
-    list-style-type: none;
+#cosotop {
+    display: block;
+    text-align: left;
+    /* letter-spacing: 2px;*/
 }
 
-ul.navbar {
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-a.linku {
-    color: #000000;
+a {
+    color: inherit
 }
