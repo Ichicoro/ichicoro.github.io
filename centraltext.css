@@ -9,3 +9,10 @@
 	font-weight: 500;
 	margin: 0px;
 }
+
+.smallertext {
+	font-size: 38px;
+	font-weight: 500;
+	margin: 0px;
+	text-align: center;
+}
