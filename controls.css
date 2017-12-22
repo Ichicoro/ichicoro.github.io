@@ -13,3 +13,12 @@
 	letter-spacing: 2px;
     cursor: pointer;
 }
+
+#pagearrow {
+    position: fixed;
+    bottom: 10px;
+    left: 0px;
+    width: 100vw;
+    height: 50px;
+    cursor: pointer;
+}

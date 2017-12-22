@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<meta name="theme-color" content="#EEEEEE">
-		<meta charset="utf-8">
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    	<script src="nightmode.js"></script>
-    	<link rel="stylesheet" type="text/css" href="style.css">
-    	<link rel="stylesheet" type="text/css" href="centraltext.css">
-    	<link rel="stylesheet" type="text/css" href="controls.css">
-		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-    	<title>Ichicoro</title>
-	</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#EEEEEE">
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <script src="nightmode.js"></script>
+        <!-- <script src="controls.js"></script> TODO: ADD CONTROLS -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="centraltext.css">
+        <link rel="stylesheet" type="text/css" href="controls.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+        <title>Ichicoro</title>
+    </head>
 <body class="lighttheme">
 
     <div class="bgdiv centered" id="top">
@@ -19,16 +20,31 @@
             <p class="smalltext">hi, my name is</p>
             <h1 id="nametext">ichicoro</h1>
             <p class="smallertext">
-				<a id="ghlink" href="https://github.com/Ichicoro">github</a> -
-				<a id="ghlink" href="https://twitter.com/ichiicoro">twitter</a> -
-				<a id="ghlink" href="https://t.me/ichicoro">telegram</a> -
+                <a id="ghlink" href="https://github.com/Ichicoro">github</a> -
+                <a id="ghlink" href="https://twitter.com/ichiicoro">twitter</a> -
+                <a id="ghlink" href="https://t.me/ichicoro">telegram</a> -
                 <a id="ghlink" href="mailto:ichi@ichicoro.pw">email</a>
-			</p>
+            </p>
+        </div>
+    </div>
+
+    <div class="bgdiv centered" id="projekts">
+        <div id="cosotop">
+            <p class="smalltext">I've developed a lot of</p>
+            <h1 id="nametext">stuff</h1>
+            <p class="smallertext">
+                and you can check it on my <a id="ghlink" href="https://github.com/Ichicoro">github</a> page.
+            </p>
         </div>
     </div>
 
     <div id="controls">
         <p id="themetoggle" onclick="toggleTheme()">toggle theme</p>
+        <p id="pagearrow" onclick="toggleTheme()"><svg class="arrows">
+                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                        </svg></p>
     </div>
 
 </body>
