@@ -8,6 +8,7 @@ body {
     cursor: default;
     overflow-y: visible;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .lighttheme {
