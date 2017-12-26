@@ -8,43 +8,39 @@
         <script src="nightmode.js"></script>
         <!-- <script src="controls.js"></script> TODO: ADD CONTROLS -->
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="centraltext.css">
         <link rel="stylesheet" type="text/css" href="controls.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
         <title>Ichicoro</title>
     </head>
 <body class="lighttheme">
+    <p id="themetoggle" onclick="toggleTheme()">toggle theme</p>
 
     <div class="bgdiv centered" id="top">
-        <div id="cosotop">
+        <div class="testocentrale">
             <p class="smalltext">hi, my name is</p>
-            <h1 id="nametext">ichicoro</h1>
+            <h1 class="nametext">ichicoro</h1>
             <p class="smallertext">
-                <a id="ghlink" href="https://github.com/Ichicoro">github</a> -
-                <a id="ghlink" href="https://twitter.com/ichiicoro">twitter</a> -
-                <a id="ghlink" href="https://t.me/ichicoro">telegram</a> -
-                <a id="ghlink" href="mailto:ichi@ichicoro.pw">email</a>
+                <a class="links" href="https://github.com/Ichicoro">github</a> <span class="hideable-lines">-</span>
+                <a class="links" href="https://twitter.com/ichiicoro">twitter</a> <span class="hideable-lines">-</span>
+                <a class="links" href="https://t.me/ichicoro">telegram</a> <span class="hideable-lines">-</span>
+                <a class="links" href="mailto:ichi@ichicoro.pw">email</a>
             </p>
-        </div>
-    </div>
-
-    <div class="bgdiv centered" id="projekts">
-        <div id="cosotop">
-            <p class="smalltext">I've developed a lot of</p>
-            <h1 id="nametext">stuff</h1>
-            <p class="smallertext">
-                and you can check it on my <a id="ghlink" href="https://github.com/Ichicoro">github</a> page.
-            </p>
-        </div>
-    </div>
-
-    <div id="controls">
-        <p id="themetoggle" onclick="toggleTheme()">toggle theme</p>
-        <p id="pagearrow"><a href="#projekts"><svg class="arrows">
+            <p id="pagearrow"><a href="#projekts"><svg class="arrows">
                             <path class="a1" d="M0 0 L30 32 L60 0"></path>
                             <path class="a2" d="M0 20 L30 52 L60 20"></path>
                             <path class="a3" d="M0 40 L30 72 L60 40"></path>
                         </svg></a></p>
+        </div>
+    </div>
+
+    <div class="bgdiv centered" id="projekts">
+        <div class="testocentrale">
+            <p class="smalltext">I've developed a lot of</p>
+            <h1 class="nametext">stuff</h1>
+            <p class="smallertext">
+                and you can check it on my <a id="ghlink" href="https://github.com/Ichicoro">github</a> page.
+            </p>
+        </div>
     </div>
 
 </body>

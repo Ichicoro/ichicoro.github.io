@@ -54,9 +54,10 @@ body {
     width: 75vw;
 }
 
-#cosotop {
+.testocentrale {
     display: block;
     text-align: left;
+    padding: 30px;
     /* letter-spacing: 2px;*/
 }
 
@@ -64,9 +65,73 @@ a {
     color: inherit;
 }
 
+@media (orientation: portrait) {
+    .hideable-lines {
+        display: none;
+    }
+    .links {
+        display: block;
+    }
+}
 
 
-/* ARROW CSS */
+
+/**
+ * CENTRAL TEXT
+**/
+
+/* .nametext {
+    font-size: 120px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.smalltext {
+    font-size: 42px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.smallertext {
+    font-size: 34px;
+    font-weight: 500;
+    margin: 0px;
+    text-align: left;
+} */
+
+.nametext, .smalltext, .smallertext {
+    margin: 0px;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .nametext {
+        font-size: 124px;
+    }
+    .smalltext {
+        font-size: 42px;
+    }
+    .smallertext {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nametext {
+        font-size: 48px;
+    }
+    .smalltext {
+        font-size: 24px;
+    }
+    .smallertext {
+        font-size: 24px;
+    }
+}
+
+
+/**
+ * ARROW CSS
+**/
 
 /* body {
   background:#0b1d2a;

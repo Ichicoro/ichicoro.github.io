@@ -14,6 +14,7 @@
 	font-weight: 600;
 	letter-spacing: 2px;
     cursor: pointer;
+    z-index: 99;
 }
 
 #pagearrow {
