@@ -78,7 +78,7 @@ a {
 
 /**
  * CENTRAL TEXT
-**/
+ */
 
 /* .nametext {
     font-size: 120px;
@@ -116,9 +116,21 @@ a {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 450px) {
     .nametext {
-        font-size: 48px;
+        font-size: 93px;
+    }
+    .smalltext {
+        font-size: 30.7px;
+    }
+    .smallertext {
+        font-size: 25.5px;
+    }
+}
+
+@media (max-width: 560px) and (min-width: 320px) {
+    .nametext {
+        font-size: 62px;
     }
     .smalltext {
         font-size: 24px;
@@ -128,10 +140,58 @@ a {
     }
 }
 
+@media (max-width: 320px) {
+    .nametext {
+        font-size: 48px;
+    }
+    .smalltext {
+        font-size: 21px;
+    }
+    .smallertext {
+        font-size: 21px;
+    }
+}
+
+/**
+ * Controls
+ */
+
+#controls {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    font-weight: 500;
+}
+
+#themetoggle {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+#pagearrow {
+    position: absolute;
+    top: 90vh;
+    left: 0px;
+    width: 100vw;
+    height: 50px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+
+
+
 
 /**
  * ARROW CSS
-**/
+ */
 
 /* body {
   background:#0b1d2a;
