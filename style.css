@@ -66,7 +66,13 @@ a {
 }
 
 .blinkingcursor {
-    display: none;
+    display: inline;
+    animation: blinkingcursoranim 1s infinite;
+}
+
+@keyframes blinkingcursoranim {
+    0%{opacity:1}
+    100%{opacity:0}
 }
 
 @media (orientation: portrait) {
@@ -106,6 +112,9 @@ a {
 .nametext, .smalltext, .smallertext {
     margin: 0px;
     font-weight: 500;
+}
+.smallertext {
+    display: inline;
 }
 
 @media (min-width: 768px) {
