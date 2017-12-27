@@ -57,12 +57,16 @@ body {
 .testocentrale {
     display: block;
     text-align: left;
-    padding: 30px;
+    padding: 50px;
     /* letter-spacing: 2px;*/
 }
 
 a {
     color: inherit;
+}
+
+.blinkingcursor {
+    display: none;
 }
 
 @media (orientation: portrait) {
