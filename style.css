@@ -72,7 +72,7 @@ a {
 
 @keyframes blinkingcursoranim {
     0%{opacity:1}
-    100%{opacity:0}
+    50%{opacity:0}
 }
 
 @media (orientation: portrait) {
