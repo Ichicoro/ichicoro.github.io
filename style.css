@@ -1,5 +1,5 @@
 body {
-    font-family: "Fixedsys Excelsior 3.01", "Overpass Mono", monospace;
+    /* font-family: "Fixedsys Excelsior 3.01", "Overpass Mono", monospace; */
     font-weight: 500;
     z-index: 3;
     margin: 0px;
@@ -9,6 +9,7 @@ body {
     overflow-y: visible;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    transition: all 2s cubic-bezier(0, 1, 0.700, 1);
 }
 
 .lighttheme {

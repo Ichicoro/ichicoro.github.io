@@ -1,44 +1,54 @@
 let style = document.createElement("style");
-let currentTheme = 0;
+let currentThemeIndex = 0;  // <-- Default colorscheme index
 
-function genRandom(x = 10, offset = 0) {
-    return Math.floor((Math.random() * x + offset));
+function genRandom(range = 10, offset = 0) {
+    return Math.floor((Math.random() * range + offset));
 }
 
 class Colorscheme {
-	constructor(bgcolor, fgcolor) {
+	constructor(bgcolor, fgcolor, font = "Overpass Mono") {
 		this.bgcolor = bgcolor;
 		this.fgcolor = fgcolor;
+        this.font = font;
 	}
-	// TODO: IMPLEMENT BACKGROUNDS
 }
 
 function generateThemeCSS(_colorscheme) {
     return "body {" + 
-    "background-color:"  + _colorscheme.bgcolor +
-    ";color: " + _colorscheme.fgcolor + "}";
+    "background-color:" + _colorscheme.bgcolor + ";" +
+    "color:" + _colorscheme.fgcolor + ";" +
+    "font-family:'" + _colorscheme.font + "','Overpass Mono',monospace}";
 }
 
 function applyTheme(_colorscheme) {
-    document.body.style.color = _colroscheme.fgcolor;
-    document.body.style.backgroundColor = _colorscheme.bgcolor;
+    console.log("changing theme of " + style + " to: " + _colorscheme);
+    style.innerHTML = generateThemeCSS(_colorscheme);
+    document.querySelector('meta[name="theme-color"]').setAttribute("content", _colorscheme.bgcolor);
 }
 
 function applyRandomTheme() {
     let rand = genRandom(colorschemes.length);
-    while (rand=currentTheme) {
+    console.log(rand);
+    while (rand == currentThemeIndex) {
         rand = genRandom(colorschemes.length);
     }
-    style.innerHTML = generateThemeCSS(colorschemes[rand]);
-    
+    currentThemeIndex = rand;
+    console.log(rand);
+    applyTheme(colorschemes[rand]);
 }
 
+
+
+
+
+// Define colorscheme array
 let colorschemes = [];
 
-colorschemes.push(new Colorscheme("#8bac0f", "#306230"));
-colorschemes.push(new Colorscheme("#f99593", "#734948")); //a06968
-colorschemes.push(new Colorscheme("#8f99ad", "#273043")); //1f2d3d
+// Push colorschemes to the colorscheme array -- ADD HERE YOUR OWN COLORSCHEMES!
+colorschemes.push(new Colorscheme("#8bac0f", "#306230"));//, "Futura Md BT"));
+colorschemes.push(new Colorscheme("#f99593", "#734948"));
+colorschemes.push(new Colorscheme("#8f99ad", "#273043"));
 
 // Apply the theme
-style.innerHTML = generateThemeCSS(colorschemes[0]);
+applyTheme(colorschemes[currentThemeIndex]);
 document.head.appendChild(style);
