@@ -6,10 +6,11 @@ function genRandom(range = 10, offset = 0) {
 }
 
 class Colorscheme {
-	constructor(bgcolor, fgcolor, font = "Overpass Mono") {
+	constructor(bgcolor, fgcolor, font = "Overpass Mono", addon = "empty") {
 		this.bgcolor = bgcolor;
 		this.fgcolor = fgcolor;
         this.font = font;
+        this.addon = addon;
 	}
 }
 
@@ -17,7 +18,9 @@ function generateThemeCSS(_colorscheme) {
     return "body {" + 
     "background-color:" + _colorscheme.bgcolor + ";" +
     "color:" + _colorscheme.fgcolor + ";" +
-    "font-family:'" + _colorscheme.font + "','Overpass Mono',monospace}";
+    "font-family:'" + _colorscheme.font + "','Overpass Mono',monospace;" +
+    (_colorscheme.addon=="empty" ? "" : _colorscheme.addon) +
+    "}";
 }
 
 function applyTheme(_colorscheme) {
@@ -48,6 +51,7 @@ let colorschemes = [];
 colorschemes.push(new Colorscheme("#8bac0f", "#306230"));//, "Futura Md BT"));
 colorschemes.push(new Colorscheme("#f99593", "#734948"));
 colorschemes.push(new Colorscheme("#8f99ad", "#273043"));
+colorschemes.push(new Colorscheme("#9bbc0f", "#306230", "Fixedsys Excelsior 3.01", "text-shadow: #84a40e 4px 4px 0;"));
 
 // Apply the theme
 applyTheme(colorschemes[currentThemeIndex]);

@@ -187,6 +187,7 @@ a {
     letter-spacing: 2px;
     cursor: pointer;
     z-index: 99;
+    font-size: 30px;
 }
 
 #pagearrow {
@@ -221,7 +222,7 @@ a {
 }
 
 .arrows path {
-    stroke: #333333;
+    stroke: rgba(51,51,51,50);
     fill: transparent;
     stroke-width: 1px;  
     animation: arrow 2s infinite;
