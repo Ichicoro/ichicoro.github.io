@@ -48,10 +48,10 @@ function applyRandomTheme() {
 let colorschemes = [];
 
 // Push colorschemes to the colorscheme array -- ADD HERE YOUR OWN COLORSCHEMES!
+colorschemes.push(new Colorscheme("#9bbc0f", "#306230", "Fixedsys Excelsior 3.01", "text-shadow: #84a40e 4px 4px 0;"));
 colorschemes.push(new Colorscheme("#8bac0f", "#306230"));//, "Futura Md BT"));
 colorschemes.push(new Colorscheme("#f99593", "#734948"));
 colorschemes.push(new Colorscheme("#8f99ad", "#273043"));
-colorschemes.push(new Colorscheme("#9bbc0f", "#306230", "Fixedsys Excelsior 3.01", "text-shadow: #84a40e 4px 4px 0;"));
 
 // Apply the theme
 applyTheme(colorschemes[currentThemeIndex]);
