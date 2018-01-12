@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Fixedsys Excelsior 3.01";
+    src: url(FSEX300.ttf);
+}
+
 body {
     /* font-family: "Fixedsys Excelsior 3.01", "Overpass Mono", monospace; */
     font-weight: 500;
